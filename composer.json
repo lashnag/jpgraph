@@ -2,6 +2,6 @@
     "name": "lashnag/jpgraph",
     "description": "JpGraph 4",
     "require": {
-        "php": "^5.1.0 || ^7.0",
+        "php": "^5.1.0 || ^7.0"
     }
 }
