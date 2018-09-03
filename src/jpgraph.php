@@ -3039,7 +3039,7 @@ class Graph {
 
     // Get X min and max values for added lines
     function GetLinesXMinMax( $aLines ) {
-        $n = count($aLines);
+        $n = $aLines ? count($aLines) : 0;
         if( $n == 0 ) return false ;
         $min = $aLines[0]->scaleposition ;
         $max = $min ;
@@ -3057,7 +3057,7 @@ class Graph {
 
     // Get min and max values for all included plots
     function GetPlotsYMinMax($aPlots) {
-        $n = count($aPlots);
+        $n = $aPlots ? count($aPlots) : 0;
         $i=0;
         do {
             list($xmax,$max) = $aPlots[$i]->Max();
