@@ -1521,7 +1521,7 @@ class Graph {
         else {
             $txts = $this->texts;
         }
-        $n = count($txts);
+        $n = $txts ? count($txts) : 0;
         $min=null;
         $max=null;
         for( $i=0; $i < $n; ++$i ) {
